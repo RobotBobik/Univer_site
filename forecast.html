@@ -3,31 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Передбачення катаклізмів</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Прогнозування катаклізмів | ЕкоТех</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-disaster {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1600x900/?natural-disaster');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Передбачення катаклізмів</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="monitoring.html">Моніторинг довкілля</a></li>
-                <li><a href="forecast.html">Передбачення катаклізмів</a></li>
-                <li><a href="bigdata.html">Роль великих даних</a></li>
-                <li><a href="innovation.html">Інновації</a></li>
-                <li><a href="partners.html">Партнери</a></li>
-                <li><a href="contact.html">Контакти</a></li>
+<body class="bg-gray-50">
+    <header class="bg-red-600 text-white py-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">ЕкоТех</div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-red-200">Головна</a></li>
+                <li><a href="monitoring.html" class="hover:text-red-200">Моніторинг</a></li>
+                <li><a href="forecast.html" class="hover:text-red-200">Прогнозування</a></li>
+                <li><a href="bigdata.html" class="hover:text-red-200">Великі Дані</a></li>
+                <li><a href="innovation.html" class="hover:text-red-200">Інновації</a></li>
+                <li><a href="partners.html" class="hover:text-red-200">Партнери</a></li>
+                <li><a href="contact.html" class="hover:text-red-200">Контакти</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <p>ІТ допомагають моделювати сценарії та передбачати природні катаклізми, такі як землетруси, повені та урагани. Дані з сенсорів аналізуються за допомогою штучного інтелекту для попередження населення.</p>
+        <section class="bg-disaster text-white text-center py-24">
+            <h1 class="text-5xl font-bold mb-6">Передбачення природних катаклізмів</h1>
+            <p class="text-xl mb-8">Захист життя через точні прогнози та раннє попередження</p>
+            <a href="contact.html" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">Долучитися до проекту</a>
+        </section>
+
+        <section class="container mx-auto my-12 grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">🌪️ Типи катаклізмів</h2>
+                <ul class="list-disc pl-5">
+                    <li>Землетруси</li>
+                    <li>Урагани та циклони</li>
+                    <li>Повені</li>
+                    <li>Лісові пожежі</li>
+                    <li>Цунамі</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">🛰️ Технології прогнозування</h2>
+                <ul class="list-disc pl-5">
+                    <li>Штучний інтелект для моделювання катаклізмів</li>
+                    <li>Супутникове спостереження для виявлення аномалій</li>
+                    <li>Геологічні сенсори для виявлення сейсмічних змін</li>
+                    <li>Big Data аналіз для прогнозування великих подій</li>
+                    <li>Машинне навчання для точного аналізу даних</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container mx-auto my-12">
+            <h2 class="text-3xl font-bold text-center mb-8">Відео про передбачення катаклізмів</h2>
+            <div class="flex justify-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lmWh9jV_1ac?si=Vp9QxIet-Zulgv72" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="container mx-auto my-12 bg-gray-100 p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-6 text-green-700">Чому прогнозування катаклізмів важливе?</h2>
+            <p class="text-xl text-gray-700 mb-6">
+                Прогнозування природних катаклізмів є ключовим для збереження життя та зменшення економічних втрат від стихійних лих. Завдяки точним та своєчасним прогнозам можливо не лише врятувати тисячі життів, але й оптимізувати стратегії підготовки до можливих катастроф.
+            </p>
+            <ul class="list-disc pl-5">
+                <li>Зменшення кількості жертв</li>
+                <li>Збереження ресурсів і майна</li>
+                <li>Оптимізація евакуаційних та рятувальних операцій</li>
+                <li>Мінімізація економічних втрат для держав та громад</li>
+            </ul>
+        </section>
+
+        <section class="container mx-auto my-12 bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-center mb-6 text-red-600">Наші досягнення</h2>
+            <p class="text-xl text-gray-700 mb-6">
+                Ми розробили і впровадили інноваційні методи прогнозування катаклізмів, що дозволяють на ранніх етапах виявляти потенційно небезпечні природні явища. Це дає змогу не лише реагувати на них, але й запобігати масштабним катастрофам.
+            </p>
+            <ul class="list-disc pl-5">
+                <li>Передбачення ураганів з точністю до 24 годин</li>
+                <li>Моделювання землетрусів на основі даних сейсмічних станцій</li>
+                <li>Інтеграція супутникових знімків для моніторингу змін навколишнього середовища</li>
+            </ul>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 ІТ в екології</p>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>© 2024 ЕкоТех: Технології порятунку планети</p>
+        </div>
     </footer>
 </body>
 </html>

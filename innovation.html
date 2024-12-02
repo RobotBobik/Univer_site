@@ -3,31 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Інновації</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Інновації | ЕкоТех</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-innovation {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1600x900/?technology,innovation');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Інновації</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="monitoring.html">Моніторинг довкілля</a></li>
-                <li><a href="forecast.html">Передбачення катаклізмів</a></li>
-                <li><a href="bigdata.html">Роль великих даних</a></li>
-                <li><a href="innovation.html">Інновації</a></li>
-                <li><a href="partners.html">Партнери</a></li>
-                <li><a href="contact.html">Контакти</a></li>
+<body class="bg-gray-50">
+    <header class="bg-purple-600 text-white py-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">ЕкоТех</div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-purple-200">Головна</a></li>
+                <li><a href="monitoring.html" class="hover:text-purple-200">Моніторинг</a></li>
+                <li><a href="forecast.html" class="hover:text-purple-200">Прогнозування</a></li>
+                <li><a href="bigdata.html" class="hover:text-purple-200">Великі Дані</a></li>
+                <li><a href="innovation.html" class="hover:text-purple-200">Інновації</a></li>
+                <li><a href="partners.html" class="hover:text-purple-200">Партнери</a></li>
+                <li><a href="contact.html" class="hover:text-purple-200">Контакти</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <p>Інноваційні технології, такі як AI, IoT та блокчейн, пропонують нові способи управління екологічними ресурсами, покращуючи ефективність і знижуючи екологічний вплив людської діяльності.</p>
+        <section class="bg-innovation text-white text-center py-24">
+            <h1 class="text-5xl font-bold mb-6">Інноваційні Екологічні Рішення</h1>
+            <p class="text-xl mb-8">Революційні технології для порятунку планети</p>
+            <a href="#features" class="px-6 py-3 bg-purple-500 hover:bg-purple-400 rounded-lg font-semibold">Дізнатися більше</a>
+        </section>
+
+        <section id="features" class="container mx-auto my-12 grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">🌿 Біотехнології</h2>
+                <p>Передові методи для екологічних рішень, спрямовані на зменшення негативного впливу на природу.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">🤖 Робототехніка</h2>
+                <p>Інноваційні роботи, які допомагають очищати океани та ліси.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">🛰️ AI-Рішення</h2>
+                <p>Аналіз даних про клімат за допомогою штучного інтелекту.</p>
+            </div>
+        </section>
+
+        <section class="container mx-auto my-12">
+            <h2 class="text-3xl font-bold text-center mb-8">Дізнайтеся більше про наші інновації</h2>
+            <div class="flex justify-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jAa58N4Jlos?si=ps4t-CJPjiWo6S0h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-12">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Про компанію</h2>
+                <p class="text-lg max-w-2xl mx-auto">ЕкоТех — це команда інноваторів, яка прагне зробити світ чистішим і безпечнішим. Ми використовуємо науку, технології та любов до природи, щоб створювати рішення для глобальних екологічних проблем.</p>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 ІТ в екології</p>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>© 2024 ЕкоТех: Технології порятунку планети</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -3,31 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Партнери</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Партнери | ЕкоТех</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .partner-logo {
+            filter: grayscale(100%) opacity(70%);
+            transition: all 0.4s ease;
+        }
+        .partner-logo:hover {
+            filter: grayscale(0%) opacity(100%);
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Наші партнери</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="monitoring.html">Моніторинг довкілля</a></li>
-                <li><a href="forecast.html">Передбачення катаклізмів</a></li>
-                <li><a href="bigdata.html">Роль великих даних</a></li>
-                <li><a href="innovation.html">Інновації</a></li>
-                <li><a href="partners.html">Партнери</a></li>
-                <li><a href="contact.html">Контакти</a></li>
+<body class="bg-slate-100 text-gray-800">
+    <header class="bg-emerald-700 text-white">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">ЕкоТех</div>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-red-200">Головна</a></li>
+                <li><a href="monitoring.html" class="hover:text-red-200">Моніторинг</a></li>
+                <li><a href="forecast.html" class="hover:text-red-200">Прогнозування</a></li>
+                <li><a href="bigdata.html" class="hover:text-red-200">Великі Дані</a></li>
+                <li><a href="innovation.html" class="hover:text-red-200">Інновації</a></li>
+                <li><a href="partners.html" class="hover:text-red-200">Партнери</a></li>
+                <li><a href="contact.html" class="hover:text-red-200">Контакти</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <p>Ми співпрацюємо з провідними організаціями, такими як Greenpeace, ООН та локальні екологічні ініціативи, для забезпечення кращого майбутнього для нашої планети.</p>
+
+    <main class="container mx-auto py-12 px-4">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4 text-emerald-700">Наші Стратегічні Партнери</h1>
+            <p class="text-xl text-gray-600">Разом ми створюємо майбутнє екологічної безпеки</p>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4 text-emerald-600">🌐 Міжнародні Партнери</h2>
+                <ul class="space-y-2">
+                    <li>UNESCO Ecological Division</li>
+                    <li>Green Planet International</li>
+                    <li>World Climate Research Programme</li>
+                    <li>Global Ecosystem Monitoring Network</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4 text-emerald-600">🏫 Наукові Установи</h2>
+                <ul class="space-y-2">
+                    <li>Київський National University</li>
+                    <li>Institute of Ecological Research</li>
+                    <li>Ukrainian Academy of Sciences</li>
+                    <li>Environmental Technology Center</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4 text-emerald-600">🏢 Технологічні Компанії</h2>
+                <ul class="space-y-2">
+                    <li>EcoSoft Technologies</li>
+                    <li>Green Innovation Labs</li>
+                    <li>DataEarth Solutions</li>
+                    <li>Climate Tech Ventures</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-emerald-700">Наші Партнери</h2>
+            <div class="grid md:grid-cols-5 gap-6 text-center">
+                <div>
+                    <img src="/api/placeholder/200/150" alt="Partner Logo" class="partner-logo mx-auto">
+                    <p class="mt-2">UNESCO</p>
+                </div>
+                <div>
+                    <img src="/api/placeholder/200/150" alt="Partner Logo" class="partner-logo mx-auto">
+                    <p class="mt-2">Green Planet</p>
+                </div>
+                <div>
+                    <img src="/api/placeholder/200/150" alt="Partner Logo" class="partner-logo mx-auto">
+                    <p class="mt-2">Climate Research</p>
+                </div>
+                <div>
+                    <img src="/api/placeholder/200/150" alt="Partner Logo" class="partner-logo mx-auto">
+                    <p class="mt-2">Ecosystem Network</p>
+                </div>
+                <div>
+                    <img src="/api/placeholder/200/150" alt="Partner Logo" class="partner-logo mx-auto">
+                    <p class="mt-2">Tech Solutions</p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 ІТ в екології</p>
+
+    <footer class="bg-emerald-700 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>© 2024 ЕкоТех: Технології порятунку планети</p>
+        </div>
     </footer>
 </body>
 </html>

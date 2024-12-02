@@ -3,31 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Роль великих даних</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Великі Дані | ЕкоТех</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-data {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1600x900/?data,technology');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Роль великих даних</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="monitoring.html">Моніторинг довкілля</a></li>
-                <li><a href="forecast.html">Передбачення катаклізмів</a></li>
-                <li><a href="bigdata.html">Роль великих даних</a></li>
-                <li><a href="innovation.html">Інновації</a></li>
-                <li><a href="partners.html">Партнери</a></li>
-                <li><a href="contact.html">Контакти</a></li>
+<body class="bg-gray-50">
+    <header class="bg-blue-600 text-white py-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">ЕкоТех</div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-blue-200">Головна</a></li>
+                <li><a href="monitoring.html" class="hover:text-blue-200">Моніторинг</a></li>
+                <li><a href="forecast.html" class="hover:text-blue-200">Прогнозування</a></li>
+                <li><a href="bigdata.html" class="hover:text-blue-200">Великі Дані</a></li>
+                <li><a href="innovation.html" class="hover:text-blue-200">Інновації</a></li>
+                <li><a href="partners.html" class="hover:text-blue-200">Партнери</a></li>
+                <li><a href="contact.html" class="hover:text-blue-200">Контакти</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <p>Великі дані допомагають аналізувати колосальні обсяги екологічної інформації. Завдяки цьому вчені можуть прогнозувати зміни клімату, контролювати викиди СО₂ та знаходити ефективні рішення для сталого розвитку.</p>
+        <section class="bg-data text-white text-center py-24">
+            <h1 class="text-5xl font-bold mb-6">Великі Дані в Екології</h1>
+            <p class="text-xl mb-8">Перетворення мільйонів бітів інформації на екологічні рішення</p>
+        </section>
+
+        <section class="container mx-auto my-12 grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">📊 Джерела даних</h2>
+                <ul class="list-disc pl-5">
+                    <li>Супутникові знімки</li>
+                    <li>Кліматичні станції</li>
+                    <li>IoT-сенсори</li>
+                    <li>Соціальні мережі</li>
+                    <li>Наукові дослідження</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">🧠 Аналіз даних</h2>
+                <ul class="list-disc pl-5">
+                    <li>Машинне навчання</li>
+                    <li>Нейронні мережі</li>
+                    <li>Статистичний аналіз</li>
+                    <li>Просторове моделювання</li>
+                    <li>Прогностичні алгоритми</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container mx-auto my-12">
+            <h2 class="text-3xl font-bold text-center mb-8">Теорії використання великих даних в екології</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-4">1. Прогнозування змін клімату</h3>
+                <p>Використання великих даних для моделювання змін клімату дозволяє створювати більш точні прогнози температури, рівня океану та інших екологічних змін.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md mt-8">
+                <h3 class="text-2xl font-semibold mb-4">2. Оптимізація використання природних ресурсів</h3>
+                <p>Аналіз великих обсягів даних допомагає виявити ефективні способи використання води, енергії та інших ресурсів в реальному часі.</p>
+            </div>
+        </section>
+
+        <section class="container mx-auto my-12 grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">🌍 Приклади застосувань великих даних</h2>
+                <ul class="list-disc pl-5">
+                    <li>Проект для збереження лісів за допомогою аналізу супутникових знімків</li>
+                    <li>Система для моніторингу якості води в реальному часі за допомогою IoT-сенсорів</li>
+                    <li>Прогнозування рівня забруднення повітря за допомогою машинного навчання</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4">🔍 Статистика великих даних</h2>
+                <p>Згідно з дослідженнями, до 2025 року обсяг даних у світі досягне 175 зетабайт, що відкриває безпрецедентні можливості для використання великих даних у різних галузях, зокрема в екології.</p>
+            </div>
+        </section>
+
+        <section class="container mx-auto my-12">
+            <h2 class="text-3xl font-bold text-center mb-8">Відео про Big Data</h2>
+            <div class="flex justify-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bAyrObl7TYE?si=opG23rZs90MzOlqi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 ІТ в екології</p>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>© 2024 ЕкоТех: Технології порятунку планети</p>
+        </div>
     </footer>
 </body>
 </html>

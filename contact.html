@@ -3,36 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакти</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Контакти | ЕкоТех</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Контакти</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="monitoring.html">Моніторинг довкілля</a></li>
-                <li><a href="forecast.html">Передбачення катаклізмів</a></li>
-                <li><a href="bigdata.html">Роль великих даних</a></li>
-                <li><a href="innovation.html">Інновації</a></li>
-                <li><a href="partners.html">Партнери</a></li>
-                <li><a href="contact.html">Контакти</a></li>
+<body class="bg-gray-50">
+    <header class="bg-indigo-600 text-white py-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">ЕкоТех</div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-indigo-200">Головна</a></li>
+                <li><a href="monitoring.html" class="hover:text-indigo-200">Моніторинг</a></li>
+                <li><a href="forecast.html" class="hover:text-indigo-200">Прогнозування</a></li>
+                <li><a href="bigdata.html" class="hover:text-indigo-200">Великі Дані</a></li>
+                <li><a href="innovation.html" class="hover:text-indigo-200">Інновації</a></li>
+                <li><a href="partners.html" class="hover:text-indigo-200">Партнери</a></li>
+                <li><a href="contact.html" class="hover:text-indigo-200">Контакти</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <p>Зв'яжіться з нами:</p>
-            <ul>
-                <li>Email: eco@it-eco.com</li>
-                <li>Телефон: +380 44 123 4567</li>
-                <li>Адреса: Київ, вул. Екологічна, 12</li>
+
+    <main class="container mx-auto py-12">
+        <section class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h1 class="text-4xl font-bold mb-6 text-indigo-700">Зв'яжіться з нами</h1>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold mb-4">📍 Наша Адреса</h2>
+                    <p>вул. Еко-Технологій, 42</p>
+                    <p>м. Київ, Україна, 01001</p>
+
+                    <h2 class="text-2xl font-semibold mt-6 mb-4">📞 Контактні Дані</h2>
+                    <p>Телефон: +38 (044) 123-45-67</p>
+                    <p>Email: info@ecotech.com.ua</p>
+
+                    <h2 class="text-2xl font-semibold mt-6 mb-4">🕒 Графік Роботи</h2>
+                    <p>Понеділок-П'ятниця: 9:00 - 18:00</p>
+                    <p>Субота-Неділя: Вихідний</p>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-indigo-700">Форма Зворотнього Зв'язку</h2>
+                <form class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Ваше Ім'я</label>
+                        <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" placeholder="Введіть ваше ім'я">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" placeholder="Введіть ваш email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">Повідомлення</label>
+                        <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700" rows="4" placeholder="Введіть ваше повідомлення"></textarea>
+                    </div>
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+                        Надіслати Повідомлення
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="my-12">
+            <h2 class="text-3xl font-bold mb-6 text-indigo-700 text-center">Використані джерела</h2>
+            <ul class="bg-white p-8 rounded-lg shadow-md space-y-4">
+                <li><a href="https://developer.mozilla.org/" class="text-indigo-600 hover:underline">MDN Web Docs</a></li>
+                <li><a href="https://tailwindcss.com/" class="text-indigo-600 hover:underline">Tailwind CSS</a></li>
+                <li><a href="https://unsplash.com/" class="text-indigo-600 hover:underline">Unsplash</a></li>
+                <li><a href="https://stackoverflow.com/" class="text-indigo-600 hover:underline">Stack Overflow</a></li>
+                <li><a href="https://www.youtube.com/" class="text-indigo-600 hover:underline">YouTube</a></li>
             </ul>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 ІТ в екології</p>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>© 2024 ЕкоТех: Технології порятунку планети</p>
+        </div>
     </footer>
 </body>
 </html>
